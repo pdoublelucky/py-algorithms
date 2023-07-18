@@ -1,6 +1,6 @@
 from comparison_based_sorter import ComparisionBasedSorter
 
-class Selection(ComparisionBasedSorter):
+class SelectionSorter(ComparisionBasedSorter):
     def __init__(self, collection) -> None:
         super().__init__(collection)
 
@@ -20,8 +20,8 @@ class Selection(ComparisionBasedSorter):
             
 
 if __name__ == "__main__":
-    t1 = [5,2,10,-1,12,22,51,19,24,42]
+    # t1 = [5,2,10,-1,12,22,51,19,24,42]
     t2 = "to be or not that is a question"
-    s = Selection(t2)
+    s = SelectionSorter(t2)
     s.sort()
     print(s.datas)
